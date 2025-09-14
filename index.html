@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Noor Jahan — Portfolio</title>
+<style>
+  :root{
+    --bg1:#f6fbff; --accent:#0b84ff; --dark:#0f1724; --muted:#6b7280;
+    --card:#ffffff; --glass: rgba(255,255,255,0.6);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background: linear-gradient(180deg,var(--bg1),#eaf4ff); color:var(--dark);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .container{max-width:1100px;margin:28px auto;padding:20px;}
+  .grid{display:grid;grid-template-columns: 320px 1fr;gap:22px;}
+  @media (max-width:800px){.grid{grid-template-columns:1fr;padding:0} .left, .right{padding:18px}}
+  .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(15,23,36,0.06)}
+  .left .profile{
+    display:flex;align-items:center;gap:14px;margin-bottom:12px;
+  }
+  .avatar{
+    width:88px;height:88px;border-radius:50%;background:var(--accent);display:inline-grid;
+    place-items:center;color:#fff;font-weight:700;font-size:22px;flex-shrink:0;
+    box-shadow:0 6px 18px rgba(11,132,255,0.18);
+  }
+  h1{margin:0;font-size:22px;letter-spacing:0.4px}
+  .sub{color:var(--accent);font-weight:600;margin-top:4px;font-size:13px}
+  .contact{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.6}
+  .contact a{color:var(--dark);text-decoration:none}
+  .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+  .section-title h3{margin:0;font-size:15px;border-bottom:3px solid var(--accent);display:inline-block;padding-bottom:6px}
+  .small{font-size:13px;color:var(--muted)}
+  .pill{display:inline-block;background:#f1f9ff;border:1px solid rgba(11,132,255,0.08);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--accent);font-size:13px}
+
+  /* Left column lists */
+  .list{margin:0;padding:0;list-style:none}
+  .list li{padding:12px 0;border-bottom:1px dashed #eef6ff}
+  .edu-title{font-weight:700}
+  .muted{color:var(--muted);font-size:13px}
+
+  /* Right column main */
+  .summary{margin-bottom:18px;line-height:1.6}
+  .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .skill{background:linear-gradient(90deg,#fff,#fbfdff);border:1px solid rgba(15,23,36,0.04);padding:8px 10px;border-radius:8px;font-weight:600;font-size:13px}
+  .project{margin-bottom:16px}
+  .project h4{margin:0;font-size:16px}
+  .project .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+  .project ul{margin:6px 0 0 18px;color:var(--muted)}
+  .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
+  @media (max-width:600px){ .cert-grid{grid-template-columns:repeat(1,1fr)} }
+
+  .cert{background:var(--glass);padding:10px;border-radius:8px;border:1px solid rgba(11,132,255,0.06);font-size:13px}
+  .lang-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:8px}
+  .lang{min-width:130px}
+  .dots{display:flex;gap:6px;margin-top:6px;align-items:center}
+  .dot{width:10px;height:10px;border-radius:50%;background:#dbeafe}
+  .dot.full{background:var(--accent)}
+
+  .download{display:inline-block;background:var(--accent);color:white;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+  footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+  /* simple hover & small animation */
+  .card:hover{transform:translateY(-2px);transition:all .18s ease}
+  a:hover{opacity:0.9}
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <aside class="left">
+        <div class="card">
+          <div class="profile">
+            <div class="avatar">NJ</div>
+            <div>
+              <h1>Noor Jahan</h1>
+              <div class="sub">Bachelor of Computer Application Student</div>
+            </div>
+          </div>
+
+          <div class="contact small">
+            <div>📞 <a href="tel:+919740872033">+91 97408 72033</a></div>
+            <div>✉️<a href="noorjahan.66002@gmail.com">noorjahan.66002@gmail.com</a></div>
+            <div>🔗 <a href="https://www.linkedin.com/in/noor-jahan-01154734b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn </a></div>
+            <div>📍 Hospet, Karnataka, India</div>
+
+          <hr style="margin:16px 0;border:none;border-top:1px solid #eef6ff">
+
+          <div>
+            <div class="section-title"><h3>Education</h3></div>
+            <ul class="list">
+              <li>
+                <div class="edu-title">Bachelor of Computer Application</div>
+                <div class="muted">Vijayanagara Sri Krishna Devaraya University — 08/2022 - 05/2025<br><span class="small">Hospet, Karnataka, India</span></div>
+              </li>
+              <li>
+                <div class="edu-title">Intermediate</div>
+                <div class="muted">Vignan Independent PU College — 06/2019 - 05/2021<br><span class="small">Hospet, Karnataka, India</span></div>
+              </li>
+              <li>
+                <div class="edu-title">Matriculation</div>
+                <div class="muted">Taha English Medium High School — 06/2018 - 05/2019<br><span class="small">Hospet, Karnataka, India</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h3>Certification</h3></div>
+            <div class="cert-grid">
+              <div class="cert"><strong>Effective Public Speaking</strong><div class="small">JCI — Effective Public Speaking</div></div>
+              <div class="cert"><strong>Soft Skill Development</strong><div class="small">SGBS Unnati Foundation</div></div>
+              <div class="cert"><strong>Digital Fluency Certificate</strong><div class="small">Futureskills Prime</div></div>
+              <div class="cert"><strong>Diploma in Financial Accounting</strong><div class="small">Completed Diploma</div></div>
+              <div class="cert"><strong>Placement Preparation</strong><div class="small">IIP / Abhyuday IIT Bombay</div></div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h3>Languages</h3></div>
+            <div class="lang-row">
+              <div class="lang">
+                <div class="small">English</div>
+                <div class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span></div>
+              </div>
+              <div class="lang">
+                <div class="small">Kannada</div>
+                <div class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span></div>
+              </div>
+              <div class="lang">
+                <div class="small">Hindi</div>
+                <div class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span></div>
+              </div>
+              <div class="lang">
+                <div class="small">Urdu</div>
+                <div class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN -->
+      <main class="right">
+        <div class="card">
+          <div class="section-title"><h3>Summary</h3></div>
+          <p class="summary small">
+            I am a dedicated and results-oriented Bachelor of Computer Application student with a strong academic foundation and a passion for technology.
+            Proficient in various programming languages and web development technologies. I developed a web project to enhance online shopping experiences.
+            I am committed to continuous learning, have clear communication skills, and public speaking abilities recognized through certifications.
+          </p>
+
+          <div style="margin-top:18px">
+            <div class="section-title"><h3>Skills</h3></div>
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Python</div>
+              <div class="skill">Java</div>
+              <div class="skill">PHP</div>
+              <div class="skill">SQL</div>
+              <div class="skill">Data Structures</div>
+            </div>
+          </div>
+
+          <div style="margin-top:20px">
+            <div class="section-title"><h3>Projects</h3></div>
+
+            <div class="project">
+              <h4>Online Shopping Mall Management System</h4>
+              <div class="meta">03/2023 — Web Application</div>
+              <ul>
+                <li>Developed a dynamic web-based application allowing shop owners in a mall to register shops, manage products, and sell online.</li>
+                <li>Customers can browse products, add to cart, and make purchases.</li>
+                <li>Includes admin control for managing shops, payments and generating sales reports.</li>
+              </ul>
+            </div>
+
+            <!-- add more projects here if needed -->
+          </div>
+
+          <div style="margin-top:20px">
+            <div class="section-title"><h3>Interests</h3></div>
+            <p class="small"><strong>Personal Development & Adventure</strong> — Gaining knowledge, hosting development events, traveling and adventure experiences.</p>
+          </div>
+    <footer>© 2025 Noor Jahan • Built with ♥ using phone • </footer>
+  </div>
+
+</body>
+</html>
